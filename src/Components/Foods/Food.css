@@ -1,0 +1,7 @@
+.allCards {
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1440px;
+}
