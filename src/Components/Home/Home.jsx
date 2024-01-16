@@ -11,7 +11,6 @@ let Home = (Props) => {
       <Section2 />
       <TeamMembers />
       <Footer />
-      {/* <Button  buttonData="Jaiten"/> */}
     </div>
   );
 }

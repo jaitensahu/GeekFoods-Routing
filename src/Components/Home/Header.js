@@ -1,5 +1,6 @@
 import './Header.css'
 import Button from './Button'
+import { Link } from 'react-router-dom';
 
 function Header() {
   let buttonStyl={
@@ -21,11 +22,11 @@ function Header() {
       </div>
 
       <div className="navTabs">
-        <link to="/">Home</link>
-        <link to="/Quote">Quote</link>
-        <link to="/Restaurants">Resturants</link>
-        <link to="/Foods">Foods</link>
-        <link to="/Contact">Contact</link>
+        <Link to="/">Home</Link>
+        <Link to="/Quote">Quote</Link>
+        <Link to="/Restaurants">Resturants</Link>
+        <Link to="/Food">Foods</Link>
+        <Link to="/Contact">Contact</Link>
       </div>
 
       <div className="navBtn">

@@ -3,7 +3,7 @@ import Input from './Input/input';
 import restroData from "./data.json";
 import { useState } from "react";
 import Card from './header/Cards/Cards'
-import './Food.css'
+import "./Restaurants.css";
 
 const Food = () => {
     const [updatedData, setUpdateData] = useState([...restroData]);

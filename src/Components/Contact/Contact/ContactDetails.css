@@ -1,0 +1,19 @@
+.detailContainer{
+    padding-top: 60px;
+    width: 50%;
+}
+
+.detailContainer h1{
+    margin: 10px 0;
+}
+.detailContainer p:nth-child(3){
+    margin: 10px 0 20px;
+}
+.contactDetails .details{
+    display: flex;
+    /* max-width: 300px; */
+    align-items: center;
+    /* justify-content: space-between; */
+    margin: 10px 0;
+}
+
