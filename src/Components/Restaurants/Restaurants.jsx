@@ -6,6 +6,7 @@ import Card from './header/Cards/Cards'
 import "./Restaurants.css";
 
 const Food = () => {
+  window.scroll(0, 0);
     const [updatedData, setUpdateData] = useState([...restroData]);
     const [searchInput, setSearchInput] = useState();
     const [ratingInput, setRatingInput] = useState();
