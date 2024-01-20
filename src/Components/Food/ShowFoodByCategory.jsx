@@ -5,6 +5,7 @@ import axios from "axios";
 import ShowFoodShimmer from "./ShowFoodShimmer";
 
 const ShowFoodByCategory = () => {
+  window.scroll(0,0)
 //   let { category } = useContext(Store);
     let [category, setCategory] = useState([]);
     let params = useParams();

@@ -5,6 +5,7 @@ import Footer from './Footer/Footer'
 import TeamMembers from './Team/TeamMembers'
 import Datastore from '../DataStore/Datastore'
 let Home = (Props) => {
+  window.scroll(0,0)
   console.log(Datastore);
   return (
     // <Datastore>

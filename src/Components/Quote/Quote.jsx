@@ -5,6 +5,7 @@ import Footer from "./Footer/Footer";
 import QuoteCard from "./QuoteCard";
 
 const Quote = () => {
+  window.scroll(0,0)
   return (
     <>
       <Header />

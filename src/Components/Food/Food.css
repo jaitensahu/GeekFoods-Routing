@@ -79,22 +79,26 @@
 
 .categoryFoodContainer {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     flex-wrap: wrap;
+    justify-content: center;
     max-width: 1200px;
     margin: 100px auto;
+    padding: 30px;
 }
 
 .categoryFoodContainer>div {
     flex-grow: 1;
     width: 30%;
-    /* height: 350px; */
     position: relative;
     border-radius: 20px;
     overflow: hidden;
+    max-width: 370px;
+    min-width: 200px;
 }
 
-.viewDetails h2,.viewDetails> button {
+.viewDetails h2,
+.viewDetails>button {
     position: absolute;
     top: 0;
     left: 0;
@@ -114,6 +118,7 @@
     height: 100%;
     transition: 0.3s ease-in-out;
 }
+
 .categoryFoodContainer>div:hover h2 {
     display: block;
     background-color: rgba(0, 0, 0, 0.54);
@@ -125,26 +130,29 @@
     color: white;
     /* transform: scale(1.5); */
 }
-.viewDetailsBtn{
-    padding: 10px 20px ;
+
+.viewDetailsBtn {
+    padding: 10px 20px;
     background-color: #1e58f7;
-    color:  white;
+    color: white;
     font-weight: bold;
     border-radius: 10px;
     box-shadow: 0 4px 5px 0 white;
     border: none;
 }
-.categoryFoodContainer>div:hover .viewDetailsBtn{
+
+.categoryFoodContainer>div:hover .viewDetailsBtn {
     display: block;
     left: 50%;
     top: 65%;
     transform: translate(-50%, -50%);
 }
 
-.categoryFoodContainer>div:hover .foodIMg{
+.categoryFoodContainer>div:hover .foodIMg {
     transform: scale(1.2);
 }
-.viewDetailsBtn:active{
+
+.viewDetailsBtn:active {
     box-shadow: 0 3px 5px 0 white;
     /* transform: translateY(5px) */
     top: 67%;
