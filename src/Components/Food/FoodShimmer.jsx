@@ -12,9 +12,9 @@ const FoodShimmer = () => {
           <div className="heroImage shimmer"></div>
           <div className="searchFood shimmer"></div>
         </div>{" "}
-        {arr.map((food) => {
+        {arr.map((food,idx) => {
           return (
-            <div>
+            <div key={food + idx + "abac"}>
               <div className="image shimmer"></div>
               <h6></h6>
             </div>

@@ -15,6 +15,7 @@ import Quote from "./Components/Quote/Quote";
 import Layout from "./Components/Food/Layout";
 import ShowFoodByCategory from "./Components/Food/ShowFoodByCategory";
 import Datastore from "./Components/DataStore/Datastore";
+import ShowMealDetails from "./Components/Food/ShowMealDetails";
 
 function App() {
   let router = createBrowserRouter([
@@ -44,8 +45,17 @@ function App() {
         },
         {
           path: "/food/:category",
-          element: <ShowFoodByCategory />,
-          
+          element: <Layout />,
+          children: [
+            {
+              path: "/food/:category/",
+              element: <ShowFoodByCategory />,
+            },
+            {
+              path: "/food/:category/:id",
+              element:<ShowMealDetails />
+            }
+          ],
         },
       ],
     },

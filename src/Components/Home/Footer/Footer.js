@@ -5,7 +5,7 @@ export default function Footer() {
     <div className="footerContainer">
       <div>
         <svg
-          class="h-8"
+          className="h-8"
           viewBox="0 0 118 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -65,11 +65,11 @@ export default function Footer() {
       </ul>
 
       <div className="icons">
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-github"></i>
-      <i class="fa-brands fa-dribbble"></i>
+      <i className="fa-brands fa-facebook"></i>
+      <i className="fa-brands fa-instagram"></i>
+      <i className="fa-brands fa-twitter"></i>
+      <i className="fa-brands fa-github"></i>
+      <i className="fa-brands fa-dribbble"></i>
       </div>
     </div>
   );

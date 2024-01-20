@@ -1,16 +1,14 @@
 import React, { useContext, useEffect, useState } from "react";
-import Header from "../Home/Header";
 import axios from "axios";
 import './Food.css'
 import { FaSearch } from "react-icons/fa";
 import { Store } from "../DataStore/Datastore";
-import ShowFoodByCategory from "./ShowFoodByCategory";
 import { Link } from "react-router-dom";
 import FoodShimmer from "./FoodShimmer";
 
 const Restaurants = () => {
   const [foodArray, setFoodArray] = useState([]);
-  const { getFoodCategory } = useContext(Store)
+  // const { getFoodCategory } = useContext(Store)
   useEffect(() => {
     getDataFromApi();
   },[]);
@@ -18,7 +16,6 @@ const Restaurants = () => {
     let response = await axios.get(
       "https://www.themealdb.com/api/json/v1/1/categories.php"
     );
-    // console.log(response.data.categories);
     setFoodArray(response.data.categories);
   }
   if (foodArray.length == 0) {
@@ -43,12 +40,8 @@ const Restaurants = () => {
         </div>{" "}
         {foodArray.map((food) => {
           return (
-            <Link to={"/food/" + food.strCategory}>
-              <div
-                className="foodCard"
-                id={food.idCategory}
-                key={food.idCategory}
-              >
+            <Link to={"/food/" + food.strCategory} key={food.idCategory}>
+              <div className="foodCard" id={food.idCategory}>
                 <div className="image">
                   <img src={food.strCategoryThumb} alt="" />
                 </div>
